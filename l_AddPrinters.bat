@@ -58,12 +58,15 @@ if [%ZUPER%] == [1] (
     echo "Not installing printers"
 ) else (
         if [%PRINTER%] == [1] (
-            %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
+        echo "Not installing Brother"
+        %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
         )
         if [%PRINTER%] == [2] (
+            echo "Not installing Zebra"
             %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
         )
         if [%PRINTER%] == [3] (
+            echo "Not installing Brother and Zebra"
             %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
             %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
         )
