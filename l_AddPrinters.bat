@@ -22,66 +22,37 @@ if "%USERNAME%" == "zuper" (
     set ZUPER=1
     )
     
-@REM if "%check_computername%" EQU "SURGERY1" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "SURGERY1" (
+    set PRINTER=3
+)
 
-@REM if "%check_computername%" EQU "SURGERY2" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "SURGERY2" (
+    set PRINTER=3
+)
 
-@REM if "%check_computername%" EQU "SURGERY3" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "SURGERY3" (
+    set PRINTER=3
+)
 
-@REM if "%check_computername%" EQU "SURGERY4" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "SURGERY4" (
+    set PRINTER=3
+)
 
-@REM if "%check_computername%" EQU "RECEPTION1" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     @REM %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "RECEPTION1" (
+    set PRINTER=2
+)
 
-@REM if "%check_computername%" EQU "RECEPTION2" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     @REM %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "RECEPTION2" (
+    set PRINTER=1
+)
 
-@REM if "%check_computername%" EQU "RECEPTION3" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     @REM %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
+if "%check_computername%" EQU "RECEPTION3" (
+    set PRINTER=1
+)
 
-@REM if "%check_computername%" EQU "RECEPTION4" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM     %EXE% -ExecutionPolicy Bypass -File %BROTHERPS%
-@REM     @REM %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
-@REM )
-
-@REM if "%check_computername%" EQU "SURGERY2" (
-@REM     set PRINTER=3
-@REM     echo "Installing printers""
-@REM )
+if "%check_computername%" EQU "RECEPTION4" (
+    set PRINTER=1
+)
 
 if [%ZUPER%] == [1] (
     echo "Not installing printers"
