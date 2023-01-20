@@ -18,6 +18,7 @@ set ZUPER=0
 set PRINTER=0
 
 if "%USERNAME%" == "zuper" (
+    echo "Found user %USERNAME%"
 	echo "Not setting up printer for %USERNAME%"
     set ZUPER=1
     )
