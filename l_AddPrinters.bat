@@ -1,7 +1,7 @@
 @echo off
 call C:\Scripts\wLocal\localENV.bat
 @REM xxxxxxx
-echo "%~n0: Start"
+echo "START: %~n0"
 
 set PRINTERPS="%LOCAL%\PS\pAddPrinters.ps1"
 set BROTHERPS="%LOCAL%\PS\pAddNetBrother.ps1"
@@ -72,3 +72,5 @@ if [%ZUPER%] == [1] (
             %EXE% -ExecutionPolicy Bypass -File %ZEBRAPS%
         )
     )
+
+echo "FINISHED: %~n0"
