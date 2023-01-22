@@ -40,11 +40,11 @@ if "%check_computername%" EQU "SURGERY4" (
 )
 
 if "%check_computername%" EQU "RECEPTION1" (
-    set PRINTER=2
+    set PRINTER=1
 )
 
 if "%check_computername%" EQU "RECEPTION2" (
-    set PRINTER=1
+    set PRINTER=2
 )
 
 if "%check_computername%" EQU "RECEPTION3" (
