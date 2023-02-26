@@ -13,6 +13,6 @@ FOR %%x IN (C:\Scripts\lSecrets\l_*.bat) DO (
     call "%%x"
 )
 
-powershell -ExecutionPolicy Bypass -File \Scripts\wLocal\ShowSeconds.ps1
+powershell -ExecutionPolicy Bypass -File \Scripts\wLocal\PS\ShowSeconds.ps1
 
 echo "FINISHED: %~n0"
