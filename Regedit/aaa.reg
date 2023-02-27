@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+;Taskbar unlock(1) or lock(0)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarSizeMove"=dword:1
+
+;Disable(1) or Enable(0) Lock screen suggested apps
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Cloud Content]
+“DisableWindowsConsumerFeatures”=dword:1
